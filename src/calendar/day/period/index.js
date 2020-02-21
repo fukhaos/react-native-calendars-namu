@@ -127,7 +127,8 @@ class Day extends Component {
 
     if (this.props.marking) {
       containerStyle.push({
-        borderRadius: 17
+        borderRadius: 5,
+        borderTopRightRadius: 8,
       });
 
       const flags = this.markingStyle;
@@ -149,7 +150,7 @@ class Day extends Component {
           backgroundColor: this.theme.calendarBackground
         };
         rightFillerStyle = {
-          backgroundColor: flags.startingDay.color
+          backgroundColor: '#D8F6F6'
         };
         containerStyle.push({
           backgroundColor: flags.startingDay.color
@@ -159,7 +160,7 @@ class Day extends Component {
           backgroundColor: this.theme.calendarBackground
         };
         leftFillerStyle = {
-          backgroundColor: flags.endingDay.color
+          backgroundColor: '#D8F6F6'
         };
         containerStyle.push({
           backgroundColor: flags.endingDay.color
